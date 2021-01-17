@@ -72,16 +72,12 @@ main{
     background-color: #f4f4f4;
 }
 #main_photo_winter{
-    position: relative;
-    
     width: 400px;
     height: 400px;
-    background: url(/img/main_photo_winter.JPG) center center;
+    background: url(../img/main_photo_winter.JPG) center center;
     background-size: cover;
     border-radius: 50%;
     border: 7px solid #ffffff;
-    z-index: 99;
-    
 }
 
 
