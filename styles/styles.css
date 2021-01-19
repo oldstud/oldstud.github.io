@@ -10,7 +10,10 @@ html, body {
 }
 
 a{
+    display: block;
 text-decoration: none;
+font-family: 'Lato', sans-serif;
+color: #333333;
 }
 
 /* font-family: 'Abril Fatface', cursive;
@@ -67,7 +70,7 @@ main{
 .wrap{
   
     width: 100%;
- padding: 100px;
+ padding: 100px 100px 0 100px;
     display: flex;
   
 }
@@ -84,6 +87,7 @@ main{
 h3{
     font-size: 24px;
     text-align: center;
+    text-decoration: underline;
     
 }
 ul{
@@ -131,5 +135,32 @@ footer{
 h2{
     font-family: 'Raleway Dots', cursive; 
     font-size: 40px;
-    margin: auto;
 }
+.contact_info{
+    display: flex;
+    flex-direction: column;
+   justify-content: flex-start;
+ align-items: center;
+}
+#my-form{
+    display: flex;
+    flex-direction: column;
+  width: 75%;
+  
+}
+input[type="email"],input[type="text"]{
+    border: none; 
+    background: #f5f5f7;
+    outline: none; 
+    color: #333333; 
+        font-size: 24px;
+    }
+input[type="email"]{
+    margin:40px 40px 0 40px;
+    height: 36px;
+}
+
+input[type="text"] {
+    margin: 40px;
+    height: 240px;   
+ }

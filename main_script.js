@@ -3,9 +3,9 @@ window.addEventListener("DOMContentLoaded", function () {
 
     // get the form elements defined in your form HTML above
 
-    var form = document.getElementById("my-form");
-    var button = document.getElementById("my-form-button");
-    var status = document.getElementById("my-form-status");
+    let form = document.getElementById("my-form");
+    let button = document.getElementById("my-form-button");
+    let status = document.getElementById("my-form-status");
 
     // Success and Error functions for after the form is submitted
 
@@ -23,7 +23,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
     form.addEventListener("submit", function (ev) {
         ev.preventDefault();
-        var data = new FormData(form);
+        let data = new FormData(form);
         ajax(form.method, form.action, data, success, error);
     });
 });
@@ -31,7 +31,7 @@ window.addEventListener("DOMContentLoaded", function () {
 // helper function for sending an AJAX request
 
 function ajax(method, url, data, success, error) {
-    var xhr = new XMLHttpRequest();
+    let xhr = new XMLHttpRequest();
     xhr.open(method, url);
     xhr.setRequestHeader("Accept", "application/json");
     xhr.onreadystatechange = function () {

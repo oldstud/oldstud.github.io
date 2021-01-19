@@ -7,18 +7,20 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
-        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway+Dots&family=Raleway:wght@400;500;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway+Dots&family=Raleway:wght@400;500;700&family=Lato&display=swap"
         rel="stylesheet">
+
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
 
     <title>Portfolio poject by Pushkin</title>
 </head>
 
 <body>
     <header id="header">
-        <a href="#" id="header__logo">.p u s h k i n.</a>
+        <a href="#header" id="header__logo">.p u s h k i n.</a>
 
         <nav id="header__navigation">
             <a href="#cv" class="nav">CV</a>
@@ -39,7 +41,7 @@
                         <li>JavaScript (ES6)</li>
                         <li>jQuery</li>
                         <li>React.js</li>
-                        <li>REST API</li>
+                        <li>AJAX</li>
                         <li>Gulp</li>
                         <li>Webpack</li>
                         <li>GIT</li>
@@ -64,6 +66,15 @@
             <div class="wrap__right" id="cv">
                 <h4>Front-End Developer</h4>
                 <h1>Pushkin Dmytro</h1>
+                <h3>Contact information</h3>
+                <div class="right_container">
+                    <a href="tel: +380630174779>"><i class="fas fa-phone"></i> +38(063)01-74-779</a>
+                    <a href="https://www.linkedin.com/in/dmytro-pushkin/"><i class="fab fa-linkedin"></i>
+                        linkedin.com/in/dmytro-pushkin/</a>
+                    <a href="https://github.com/oldstud"><i class="fab fa-github"></i> github.com/oldstud</a>
+                    <a href="mailto:dimapushkin1994@gmail.com"><i class="far fa-envelope"></i>
+                        dimapushkin1994@gmail.com</a>
+                </div>
                 <div class="right_container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
                     soluta exercitationem doloribus, veniam officiis pariatur ipsum, perspiciatis porro, sed placeat
                     culpa ut quaerat aliquam quam necessitatibus cupiditate. Praesentium, illo quas. Lorem ipsum dolor,
@@ -89,7 +100,7 @@
                 </div>
                 <h3>Experience in IT</h3>
                 <div class="right_container">
-                    <h4>uplay.com / Site Administrator</h4>
+                    <h4>Site Administrator / uplay.ua</h4>
                     <span class="grey_italic">may 2020- august 2020</span>
                     <ul>
                         <li>Add and update content</li>
@@ -105,13 +116,12 @@
 
 
         </div>
-        <div class="wrap" id="contact">
-            <h2>Contact information</h2>
+        <div class="wrap contact_info" id="contact">
+            <h2>Contact</h2>
             <form id="my-form" action="https://formspree.io/f/xbjpwdgb" method="POST">
-                <label>Email:</label>
-                <input type="email" name="email" />
-                <label>Message:</label>
-                <input type="text" name="message" />
+                <input type="email" name="email" placeholder="Your email">
+                <!-- <input type="text" name="message" placeholder="Your message..."> -->
+                <textarea name="message" cols="30" rows="10"></textarea>
                 <button id="my-form-button">Submit</button>
                 <p id="my-form-status"></p>
             </form>
