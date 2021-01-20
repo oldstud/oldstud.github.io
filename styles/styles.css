@@ -80,7 +80,9 @@ main{
     min-height: 100%;
   font-family: 'Raleway', sans-serif;
 }
-
+#main_photo{
+    max-width:370px;
+}
 
 .wrap{
     width: 100%;
@@ -202,9 +204,6 @@ textarea {
     width: 101%;
    
   }
-
-
-
  /* modal */
  #wrap_projects{
     display: none;
@@ -360,7 +359,8 @@ textarea {
       display: flex;
       justify-content: space-around;
       align-items: center;
-    height: 100px;
+width: 100%;
+    height: 75px;
     background-color: #333333;
     color: #ffffff;
     font-family: 'Abril Fatface', cursive;
