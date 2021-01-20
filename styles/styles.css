@@ -144,8 +144,8 @@ h2{
 .contact_info{
     display: flex;
     flex-direction: column;
-   justify-content: flex-start;
- align-items: center;
+    justify-content: flex-start;
+    align-items: center;
 }
 #my-form{
     display: flex;

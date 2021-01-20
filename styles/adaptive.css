@@ -1,7 +1,35 @@
 @media screen and (max-width:975px){
   
     .wrap{
-        padding: 0;
-       
+     
+       flex-direction: column;
+    }
+    #main_photo{
+        align-self: center;
+        padding-top: 10px;
     }
 }
+@media screen and (max-width:600px){
+   .wrap{
+       padding:0;
+   }
+   #header__logo{
+       display: none;
+   }
+   #header{
+justify-content: center;
+   }
+   #header__navigation{
+       padding-right: 0;
+   }
+} 
+@media screen and (max-width:390px){
+    #main_photo{
+        width:100%;
+    }
+    .right_container>a{
+        font-size: 14px;
+    }
+}
+
+
