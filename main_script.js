@@ -1,4 +1,3 @@
-
 window.addEventListener("DOMContentLoaded", function () {
 
     // get the form elements defined in your form HTML above
@@ -12,11 +11,13 @@ window.addEventListener("DOMContentLoaded", function () {
     function success() {
         form.reset();
         button.style = "display: none ";
-        status.innerHTML = "Thanks!";
+        status.style.cssText = "color: Green; font-size:26px;text-align:center;margin:10px";
+        status.innerHTML = "Thanks!&#128077;";
     }
 
     function error() {
-        status.innerHTML = "Oops! There was a problem.";
+        status.style.cssText = "color: red; font-size:26px;text-align:center;margin:10px";
+        status.innerHTML = "Oops! There was a problem. &#128553;";
     }
 
     // handle the form submission event
@@ -44,3 +45,6 @@ function ajax(method, url, data, success, error) {
     };
     xhr.send(data);
 }
+
+
+
