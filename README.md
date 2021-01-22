@@ -1,3 +1,4 @@
 # oldstud.github.io
-this repository == CV;
+this repository = (CV + Portfolio);
+
 
