@@ -30,6 +30,11 @@ justify-content: center;
     .right_container>a{
         font-size: 14px;
     }
+    #filmoogle:hover{
+        
+        transform: scale(1.5);
+      
+    }
 }
 
 
