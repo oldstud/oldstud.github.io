@@ -1,7 +1,9 @@
+
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     
 }
 html, body {
@@ -23,11 +25,15 @@ button{
 }
 .right_container>a{
     font-family: 'Lato', sans-serif;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     margin: 10px;
 }
 .right_container>a:hover{
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
 }
 a{
     display: block;
@@ -47,8 +53,12 @@ font-family: 'Raleway Dots', cursive; */
     width: 100%;
     height: 40px;
     background-color: #333333;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     font-family: 'Abril Fatface', cursive;
     color: #f5f5f7;
 }
@@ -60,9 +70,14 @@ font-family: 'Raleway Dots', cursive; */
     color: #ffffff;
 }
 #header__navigation{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color:#ffffff ;
     display: flex;
     padding-right: 10%;
@@ -87,12 +102,19 @@ main{
 .wrap{
     width: 100%;
  padding: 100px 100px 0 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   
 }
 .wrap__left{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-color: #333333;
     color: #f5f5f7;
 }
@@ -142,14 +164,28 @@ h2{
     font-size: 40px;
 }
 .contact_info{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 #my-form{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 75%;
 }
 input[type="email"],textarea{
@@ -158,6 +194,22 @@ input[type="email"],textarea{
     outline: none; 
     color: #333333; 
     font-size: 24px;
+    }
+textarea::-webkit-input-placeholder{
+        padding-left: 15px;
+        font-family: 'Raleway', sans-serif;
+    }
+textarea::-moz-placeholder{
+        padding-left: 15px;
+        font-family: 'Raleway', sans-serif;
+    }
+textarea:-ms-input-placeholder{
+        padding-left: 15px;
+        font-family: 'Raleway', sans-serif;
+    }
+textarea::-ms-input-placeholder{
+        padding-left: 15px;
+        font-family: 'Raleway', sans-serif;
     }
 input[type="email"],textarea::placeholder{
         padding-left: 15px;
@@ -194,6 +246,8 @@ textarea {
     width: 0;
     height: 100%;
     background: #006400;
+    -webkit-transition: all .35s;
+    -o-transition: all .35s;
     transition: all .35s;
     z-index: -5;
   }
@@ -216,14 +270,17 @@ textarea {
 
  .fa-times{
      position: absolute;
-     right: -40px;
+     right: -1px;
      top: -40px;
-     align-self: flex-end;
+     -ms-flex-item-align: end;
+         align-self: flex-end;
      font-size: 36px;
      color: #ffffff;    
  }
  #close_icon:hover{
-     transform: scale(1.2);
+     -webkit-transform: scale(1.2);
+         -ms-transform: scale(1.2);
+             transform: scale(1.2);
  }
  #modal_projects{
      position: relative;
@@ -258,9 +315,14 @@ textarea {
     color: white;
     font-weight: bold;
     font-size: 18px;
+    -webkit-transition: 0.6s ease;
+    -o-transition: 0.6s ease;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
   }
   
   /* Position the "next button" to the right */
@@ -303,6 +365,8 @@ textarea {
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
+    -webkit-transition: background-color 0.6s ease;
+    -o-transition: background-color 0.6s ease;
     transition: background-color 0.6s ease;
   }
   
@@ -328,9 +392,15 @@ textarea {
     to {opacity: 1}
   }
   .slide_wrap{
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       width: 100%;
       height: 300px;
       background-color: salmon;
@@ -340,13 +410,17 @@ textarea {
   #filmoogle{
   font-family: 'Imbue', serif;
   color: #ffffff;
+  -webkit-transition: all 1s linear 0s;
+  -o-transition: all 1s linear 0s;
   transition: all 1s linear 0s;
  
   
   }
   #filmoogle:hover{
       color: red;
-      transform: scale(2);
+      -webkit-transform: scale(2);
+          -ms-transform: scale(2);
+              transform: scale(2);
     
   }
 
@@ -356,9 +430,14 @@ textarea {
 
   /* footer */
   footer{
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-around;
-      align-items: center;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
 width: 100%;
     height: 75px;
     background-color: #333333;
