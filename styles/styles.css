@@ -424,8 +424,19 @@ textarea {
     
   }
 
-  .first_sl{
+  .first_sl{    
       background-color: #000000;
+  }
+  .second_sl{
+      background-image: url(/img/header.jpg);
+      background-position: center;
+      background-color: #bbb;
+      background-repeat: no-repeat;
+      background-size: 100%;
+  }
+  #blog{
+      color: #ffffff;
+      font-size: 48px;
   }
 
   /* footer */
