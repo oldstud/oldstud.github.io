@@ -423,6 +423,9 @@ textarea {
               transform: scale(2);
     
   }
+  .third_slide{
+      background: url(../img/digPro.png);
+  }
 
   .first_sl{    
       background-color: #000000;
