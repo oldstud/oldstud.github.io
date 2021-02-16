@@ -421,7 +421,13 @@ textarea {
       -webkit-transform: scale(2);
           -ms-transform: scale(2);
               transform: scale(2);
-    
+  }
+  .task{
+  
+      background-color: 	#3CB371; 
+font-weight: 800;
+      background-size: contain;
+      background-position: center;
   }
   .third_slide{
       background: url(../img/digPro.png);
