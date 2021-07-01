@@ -275,7 +275,8 @@ textarea {
      -ms-flex-item-align: end;
          align-self: flex-end;
      font-size: 36px;
-     color: #ffffff;    
+     color: #ffffff; 
+     margin: 0 10px;   
  }
  #close_icon:hover{
      -webkit-transform: scale(1.2);
@@ -284,7 +285,7 @@ textarea {
  }
  #modal_projects{
      position: relative;
-     margin:10% 20% auto 20%;
+     margin:50px auto;
      
      max-width: 900px;
      min-height: 300px;  
